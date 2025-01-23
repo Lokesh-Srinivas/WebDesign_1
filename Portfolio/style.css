@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+    color: rgb(7, 7, 35);
+}
+
+.banner {
+    text-align: center;
+    background-color: rgb(10, 10, 48);
+    color: aliceblue;
+    padding: 5px;
+}
+
+.container img {
+    width: 150px;
+    /* Resize image to a fixed width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Optional: make images circular */
+}
+
+/* Image gallery styles */
+/* Image gallery styles */
+/* Image gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Create a responsive grid */
+    gap: 20px;
+    /* Space between images */
+    margin: 20px 0;
+}
+
+/* Individual gallery item box */
+.gallery-item {
+    border: 2px solid #ccc;
+    /* Box border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 10px;
+    overflow: hidden;
+    /* Prevent images from overflowing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add a subtle shadow */
+    transition: transform 0.3s ease;
+    height: 200px;
+    /* Fixed height for uniformity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+.gallery-item img {
+    width: 100%;
+    /* Make image fill the box */
+    height: 100%;
+    /* Make image fill the box */
+    object-fit: cover;
+    /* Ensure the image covers the entire area */
+    border-radius: 8px;
+    /* Rounded corners for images */
+}
+
+nav {
+    background-color: rgb(238, 241, 244);
+    color: rgb(56, 74, 90);
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    font-variant: small-caps;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+section {
+    background-color: rgb(209, 208, 208);
+    margin: 5px 0;
+    padding: 5px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: rgb(30, 34, 38);
+    background-color: aliceblue;
+    padding: 5px 5px;
+}
+
+aside {
+    background-color: rgb(207, 209, 210);
+    padding: 5px;
+
+}
+
+footer {
+    text-align: left;
+    background-color: rgb(198, 194, 194);
+    color: rgb(152, 64, 64);
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    align-items: center;
+}

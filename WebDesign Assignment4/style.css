@@ -1,0 +1,65 @@
+label {
+  float: left;
+  width: 150px;
+}
+
+#container {
+  width: 710px;
+  margin: auto;
+  background-color: rgb(186, 192, 209);
+}
+
+main {
+  padding: 40px;
+}
+
+#title_error,
+#phone_error,
+#email_error,
+#city_error,
+#state_error,
+#zip_error,
+#firstname_error,
+#radioButton_error,
+#lastname_error,
+#source_error {
+  color: red;
+  display: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.checkBoxContainer {
+  float: left;
+  display: none;
+  padding-bottom: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: none;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+#dynamic_textField {
+  display: none;
+  margin-bottom: 20px;
+}

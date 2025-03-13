@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHaven - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="scss/main.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Tech Collective</a>
+            <button class="toggle-button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#Diwali-Offers">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Tech Collective</h1>
+            <p>Find the latest tech gadgets and Offers only for Students!!</p>
+            <a href="products.html" class="btn">Get Offer!</a>
+        </div>
+    </main>
+
+    <!-- Categories Section with Icons -->
+    <section id="Categories">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+            <div class="category-laptop">
+                <i class="fas fa-laptop"></i>
+                <span>Laptops</span>
+            </div>
+            <div class="category-smartphone">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Smartphones</span>
+            </div>
+            <div class="category-tablet">
+                <i class="fas fa-tablet-alt"></i>
+                <span>Tablets</span>
+            </div>
+            <div class="category-acc">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Accessories</span>
+            </div>
+            <div class="category-tv">
+                <i class="fas fa-tv"></i>
+                <span>Smart TVs</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="grid-layout">
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/product1.jpg" alt="Smartphone" style="width: 300px;">
+                    <h3>Samsung Galaxy S25 Ultra</h3>
+                    <p>$799.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product2.jpg" alt="Smartphone" style="width: 300px;">
+                    <h3>Google Pixel 9 Pro</h3>
+                    <p>$799.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product3.jpg" alt="Smartphone" style="width: 300px;">
+                    <h3>AirPods Max</h3>
+                    <p>$799.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image7.jpg" alt="Smartphone" style="width: 300px;">
+                    <h3>Huawei Mate XT Ultimate</h3>
+                    <p>$799.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Diwali Dhamaka Offers Section -->
+    <section id="Diwali-Offers">
+        <h2>Diwali Dhamaka Offers on Apple Products</h2>
+        <div class="diwali-grid">
+            <div class="offer-item">
+                <img src="images/apple1.png" alt="iPhone 15 Pro Max">
+                <p class="offer-price">Now only $649.99</p>
+            </div>
+            <div class="offer-item">
+                <img src="images/macbook1.jpg" alt="MacBook Pro">
+                <p class="offer-price">Now only $1099.99</p>
+            </div>
+            <div class="offer-item">
+                <img src="images/applewatch1.jpg" alt="Apple Watch Series 9">
+                <p class="offer-price">Now only $349.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechHaven. All Rights Reserved.</p>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i>
+                Instagram</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbar = document.querySelector('.navbar');
+
+            toggleButton.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

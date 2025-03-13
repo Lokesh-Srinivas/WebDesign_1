@@ -1,0 +1,10 @@
+// A function to lighten colors
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
+  }
+  
+  // A function to calculate grid widths
+  @function grid-width($columns) {
+    @return percentage($columns / $grid-columns);
+  }
+  

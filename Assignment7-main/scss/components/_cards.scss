@@ -1,0 +1,25 @@
+.card {
+    @include box-shadow(10px);
+    background-color: $secondary-color;
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+    margin-bottom: $margin-base;
+    font-family: $font-family-base;
+    
+    .card-header {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  
+    .card-body {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #333;
+    }
+  
+    &:hover {
+      @include box-shadow(15px); 
+    }
+  }
+  

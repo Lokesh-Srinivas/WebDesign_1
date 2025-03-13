@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TechHaven - Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">TechHaven</a>
+            <button class="toggle-button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-list">
+        <h2>Our Products</h2>
+
+        <!-- Student Discount Section -->
+        <section class="student-discounts">
+            <h2>Exclusive Student Discounts!</h2>
+            <p>Grab amazing deals on the latest gadgets just for students. Verify your student status for an additional
+                10% off!</p>
+            <div class="discount-offers">
+                <article class="offer-card">
+                    <img src="images/product1.jpg" alt="Samsung Galaxy S25 Ultra" class="offer-image">
+                    <h3>Samsung Galaxy S25 Ultra</h3>
+                    <p class="original-price">$799.99</p>
+                    <p class="discounted-price">$719.99 <span class="discount-badge">10% OFF</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+                <article class="offer-card">
+                    <img src="images/xps-12.jpg" alt="Dell XPS Laptop" class="offer-image">
+                    <h3>Dell XPS</h3>
+                    <p class="original-price">$999.99</p>
+                    <p class="discounted-price">$899.99 <span class="discount-badge">10% OFF</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- General Product List Section -->
+        <h2>All Products</h2>
+        <div class="grid-layout">
+            <article class="product-item">
+                <img src="images/stu1.png" alt="Apple iPad M2">
+                <h3>Apple iPad M2</h3>
+                <p>$499.99</p>
+                <button class="btn">Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <img src="images/product2.jpg" alt="Google Pixel Tablet">
+                <h3>Google Pixel</h3>
+                <p>$499.99</p>
+                <button class="btn">Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <img src="images/product3.jpg" alt="Airpods Max">
+                <h3>Airpods Max</h3>
+                <p>$499.99</p>
+                <button class="btn">Add to Cart</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechHaven. All Rights Reserved.</p>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i>
+                Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbar = document.querySelector('.navbar');
+
+            toggleButton.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

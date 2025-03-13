@@ -1,0 +1,18 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: $gutter-width;
+    padding: $padding-base;
+  }
+  
+  .grid-item {
+    background-color: $secondary-color;
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+    @include box-shadow(5px);
+    
+    &:hover {
+      @include box-shadow(10px); 
+    }
+  }
+  

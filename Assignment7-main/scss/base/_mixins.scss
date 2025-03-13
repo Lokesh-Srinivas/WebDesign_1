@@ -1,0 +1,35 @@
+// Mixin for box shadows
+@mixin box-shadow($size: 10px) {
+    box-shadow: 0 $size 15px rgba(0, 0, 0, 0.1);
+  }
+
+  // Mixin for hover transitions
+@mixin hover-transition {
+    transition: all 0.3s ease;
+  }
+  
+  
+  // Flexbox Center Mixin
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin for responsive font sizes
+  @mixin responsive-font-size($size) {
+    font-size: $size;
+    
+    @media (max-width: 768px) {
+      font-size: $size - 2px;
+    }
+  }
+
+  //Mixin with media Query SCSS property
+  @mixin respond-to($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content; 
+    }
+  }
+  
+  

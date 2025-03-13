@@ -1,0 +1,92 @@
+// Import Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/functions';
+
+// Import Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/nav';
+@import 'components/footer';
+@import 'components/categories';
+@import 'components/diwali';
+@import 'components/student-discount';
+
+
+// Import Layout
+@import 'layout/grid';
+@import 'layout/flexbox';
+
+// Import Pages
+@import 'pages/home';
+@import 'pages/product';
+
+
+:root {
+    --margin-mobile: 222px; // Custom Property
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; 
+    line-height: 1.5;
+  
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 0.875rem; 
+    }
+}
+
+
+
+.navbar {
+    padding: 10px 0; 
+}
+
+
+
+#Categories {
+    padding: 40px 20px; 
+    h2 {
+        margin-bottom: 20px; 
+    }
+}
+
+.featured-products {
+    padding: 40px 20px; 
+    h2 {
+        margin-bottom: 20px; 
+    }
+}
+
+.product-item {
+    padding: 15px; 
+}
+
+#Diwali-Offers {
+    padding: 40px 20px; 
+    h2 {
+        margin-bottom: 20px; 
+    }
+}
+
+footer {
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+  
+    @media (max-width: $breakpoint-mobile) {
+      margin: 0.5rem 0;
+    }
+  }

@@ -1,0 +1,32 @@
+%button-base {
+  padding: $padding-base $padding-base * 2;
+  border-radius: $border-radius-base;
+  font-weight: 500;
+  font-family: $font-family-base;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  @include hover-transition;
+}
+
+.button-primary {
+  @extend %button-base;
+  background-color: $primary-color;
+  color: $secondary-color;
+  
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+    @include box-shadow(8px); 
+  }
+}
+
+.button-accent {
+  @extend %button-base;
+  background-color: $accent-color;
+  color: $secondary-color;
+  
+  &:hover {
+    background-color: lighten($accent-color, 10%);
+    @include box-shadow(8px); 
+  }
+}

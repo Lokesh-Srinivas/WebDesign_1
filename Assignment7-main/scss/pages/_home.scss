@@ -1,0 +1,66 @@
+.hero-section {
+    @include flex-center;
+    background-color: lighten($primary-color, 15%);
+    height: 350px;
+    color: $secondary-color;
+    text-align: center;
+  
+    .hero-content {
+      h1 {
+        font-size: 3.5rem;
+        font-family: $font-family-base;
+        font-weight: 600;
+      }
+  
+      p {
+        font-size: 1.5rem;
+        margin-bottom: $padding-base;
+      }
+  
+      .btn {
+        @include box-shadow(5px);
+        @extend .button-primary;
+      }
+    }
+  }
+  
+  .featured-products {
+    padding: $padding-base;
+  
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: $padding-base;
+      font-family: $font-family-base;
+    }
+  
+    .product-grid {
+      @extend .grid-layout;
+  
+      .product-item {
+        @include box-shadow(5px);
+        text-align: center;
+  
+        h3 {
+          font-size: 1.8rem;
+          color: $primary-color;
+        }
+  
+        p {
+          font-size: 1.25rem;
+          color: #333;
+        }
+  
+        .btn {
+          margin-top: $padding-base;
+          @extend .button-accent;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile){
+
+    .hero-section{
+        margin-top: var(--margin-mobile);
+    }
+
+  }  

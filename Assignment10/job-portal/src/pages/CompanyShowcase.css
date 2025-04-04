@@ -1,0 +1,27 @@
+/* CompanyShowcase.css */
+
+.company-showcase-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .company-card {
+    flex: 1 1 calc(33.333% - 24px); /* Adjusts to take 1/3rd width on large screens */
+    max-width: 300px;
+    min-width: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .company-card {
+      flex: 1 1 calc(50% - 24px); /* Takes 1/2 width on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-card {
+      flex: 1 1 100%; /* Full width on small screens */
+    }
+  }
+  

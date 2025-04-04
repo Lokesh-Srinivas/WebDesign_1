@@ -1,0 +1,66 @@
+/* Main grid layout for cards */
+.jobs-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual job card styling */
+  .jobs-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .jobs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title and Company */
+  .job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  .job-company {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  /* Labels for description and salary */
+  .job-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .job-description {
+    color: #555;
+    display: block;
+    margin-top: 5px;
+    max-height: 3.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .job-salary {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  button {
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #004085 !important;
+    color: white !important;
+  }
+  
